@@ -37,6 +37,18 @@ def checkGameHorizontal(myBoard):
     elif myBoard[6] == myBoard[7] == myBoard[8] and myBoard[6] != "-":
         winningPlayer = myBoard[6]
         return True
+        
+def Check_the_row(myBoard):
+    global winningPlayer
+    if myBoard[0] == myBoard[3] == myBoard[6] and myBoard[0] != "-":
+        winningPlayer = myBoard[0]
+        return True
+    elif myBoard[1] == myBoard[4] == myBoard[7] and myBoard[1] != "-":
+        winningPlayer = myBoard[1]
+        return True
+    elif myBoard[2] == myBoard[5] == myBoard[8] and myBoard[2] != "-":
+        winningPlayer = myBoard[2]
+        return True
 
 # player turn
 # checking again game win or tie
