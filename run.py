@@ -7,7 +7,12 @@ cur_player = "@"
 The_winner = None
 game_running = True
 
-print("Welcome to RK tic tac toe game")
+print("--------------------------------")
+print("Welcome to RK tic tac toe game\n")
+print("Please follow the game instruction\n")
+print("You can only enter number from 1-9\n")
+print("Best of luck")
+print("--------------------------------")
 
 # This statement will print the game board
 def myBoard(gameBoard):
