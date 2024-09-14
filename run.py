@@ -2,9 +2,9 @@
 gameBoard = ["-", "-", "-",
              "-", "-", "-",
              "-", "-", "-"]
-cur_player = "@"
-The_winner = None
-game_running = True
+currentPlayer = "@"
+Thewinner = None
+gameRunning = True
 
 # Welcome message and game instruction
 print("------------------------------------")
@@ -28,81 +28,85 @@ def myBoard(gameBoard):
 
 # player input data
 def myPlayerData(gameBoard):
-    player_inp = int(input("Please Enter number from 1 to 9: "))
-    if player_inp >= 1 and player_inp <= 9 and gameBoard[player_inp-1] == "-":
-        gameBoard[player_inp-1] = cur_player
+    playerInp = int(input("Please Enter number from 1 to 9: "))
+    if playerInp >= 1 and playerInp <= 9 and gameBoard[playerInp-1] == "-":
+        gameBoard[playerInp-1] = currentPlayer
     else:
         print("Box is taken try another number!")
-#def restartGame(gameBoard):
 
+# Ask if the player want to restart tic tac toe game
+def restartGame(gameBoard):
+    restart = input("Do you want to restart your game (yes/no):").strip().lower()
+    if restart == "yes":
+        print("you play again")
 
 # checking if the game is win or tie
-
-def checkGameHorizontal(gameBoard):
-    global The_winner
+def checkHorizontaly(gameBoard):
+    global Thewinner
     if gameBoard[0] == gameBoard[1] == gameBoard[2] and gameBoard[1] != "-":
-        The_winner = gameBoard[0]
+        Thewinner = gameBoard[0]
         return True
 
     elif gameBoard[3] == gameBoard[4] == gameBoard[5] and gameBoard[3] != "-":
-        The_winner = gameBoard[3]
+        Thewinner = gameBoard[3]
         return True
 
     elif gameBoard[6] == gameBoard[7] == gameBoard[8] and gameBoard[6] != "-":
-        The_winner = gameBoard[6]
+        Thewinner = gameBoard[6]
         return True
 
 # checking the game row
-def Check_the_row(gameBoard):
-    global The_winner
+def checkGameRow(gameBoard):
+    global Thewinner
     if gameBoard[0] == gameBoard[3] == gameBoard[6] and gameBoard[0] != "-":
-        The_winner = gameBoard[0]
+        Thewinner = gameBoard[0]
         return True
     elif gameBoard[1] == gameBoard[4] == gameBoard[7] and gameBoard[1] != "-":
-        The_winner = gameBoard[1]
+        Thewinner = gameBoard[1]
         return True
     elif gameBoard[2] == gameBoard[5] == gameBoard[8] and gameBoard[2] != "-":
-        The_winner = gameBoard[2]
+        Thewinner = gameBoard[2]
         return True
 
-def check_my_diag(gameBoard):
-    global The_winner
+def checkDiagonally(gameBoard):
+    global Thewinner
     if gameBoard[0] == gameBoard[4] == gameBoard[8] and gameBoard[0] != "-":
-        The_winner = gameBoard[0]
+        Thewinner = gameBoard[0]
         return True
     elif gameBoard[2] == gameBoard[4] == gameBoard[6] and gameBoard[2] != "-":
-        The_winner = gameBoard[2]
+        Thewinner = gameBoard[2]
         return True
 
 # This function displa
 
 def checktieGame(gameBoard):
-    global game_running
+    global gameRunning
     if "-" not in gameBoard:
         myBoard(gameBoard)
         print("The game is very tie!")
-        game_running = False
+        gameRunning = False
 
 # This function going to check the winner
 
 def checkWinner():
-    if check_my_diag(gameBoard) or checkGameHorizontal(gameBoard) or Check_the_row(gameBoard):
-        print(f"The game winner is {The_winner} congratulation")
+    if checkDiagonally(gameBoard) or checkHorizontaly(gameBoard) or checkGameRow(gameBoard):
+        print(f"The game winner is {Thewinner} congratulation")
 
 # change player
 
 def PlayerTurn():
-    global cur_player
-    if cur_player == "@":
-        cur_player = "$"
+    global currentPlayer
+    if currentPlayer == "@":
+        currentPlayer = "$"
     else:
-        cur_player = "@"
+        currentPlayer = "@"
 
 # checking again game win or tie
 
-while game_running:
+while gameRunning:
     myBoard(gameBoard)
     myPlayerData(gameBoard)
     checkWinner()
     checktieGame(gameBoard)
     PlayerTurn()
+    restartGame(gameBoard)
