@@ -11,20 +11,20 @@ print("------------------------------------")
 print("Welcome to RK tic tac toe game!!\n")
 print("Please follow the game instruction\n")
 print("1. You can only enter number from 1-9\n")
-print("2. Players take turns placing their mark (@and$) in this box sign |-| of the grid\n")
-print("3. The first player to align three of their marks in a row wins the game\n")
+print("2. Players take turns\n")
+print("3. Player 1to align three of their marks in a row wins the game\n")
 print("Enjoy playing Rk Tic Tac Toe, and the best player win!")
 print("------------------------------------")
 
+
 # This statement will print the game board
-
 def myBoard(gameBoard):
+    print(gameBoard[0] + " | " + gameBoard[1] + " | " + gameBoard[2])
+    print("**********")
+    print(gameBoard[3] + " | " + gameBoard[4] + " | " + gameBoard[5])
+    print("**********")
+    print(gameBoard[6] + " | " + gameBoard[7] + " | " + gameBoard[8])
 
-  print(gameBoard[0] + " | " + gameBoard[1] + " | " + gameBoard[2])
-  print("**********")
-  print(gameBoard[3] + " | " + gameBoard[4] + " | " + gameBoard[5])
-  print("**********")
-  print(gameBoard[6] + " | " + gameBoard[7] + " | " + gameBoard[8])
 
 # player input data
 def myPlayerData(gameBoard):
@@ -34,11 +34,13 @@ def myPlayerData(gameBoard):
     else:
         print("Box is taken try another number!")
 
+
 # Ask if the player want to restart tic tac toe game
 def restartGame(gameBoard):
-    restart = input("Do you want to restart your game (yes/no):").strip().lower()
+    restart = input("Do you want to restart (yes/no):").strip().lower()
     if restart == "yes":
         print("you play again")
+
 
 # checking if the game is win or tie
 def checkHorizontaly(gameBoard):
@@ -55,6 +57,7 @@ def checkHorizontaly(gameBoard):
         Thewinner = gameBoard[6]
         return True
 
+
 # checking the game row
 def checkGameRow(gameBoard):
     global Thewinner
@@ -68,6 +71,7 @@ def checkGameRow(gameBoard):
         Thewinner = gameBoard[2]
         return True
 
+
 def checkDiagonally(gameBoard):
     global Thewinner
     if gameBoard[0] == gameBoard[4] == gameBoard[8] and gameBoard[0] != "-":
@@ -77,8 +81,8 @@ def checkDiagonally(gameBoard):
         Thewinner = gameBoard[2]
         return True
 
-# This function displa
 
+# This function displa
 def checktieGame(gameBoard):
     global gameRunning
     if "-" not in gameBoard:
@@ -86,14 +90,14 @@ def checktieGame(gameBoard):
         print("The game is very tie!")
         gameRunning = False
 
-# This function going to check the winner
 
+# This function going to check the winner
 def checkWinner():
     if checkDiagonally(gameBoard) or checkHorizontaly(gameBoard) or checkGameRow(gameBoard):
         print(f"The game winner is {Thewinner} congratulation")
 
-# change player
 
+# change player
 def PlayerTurn():
     global currentPlayer
     if currentPlayer == "@":
@@ -101,8 +105,8 @@ def PlayerTurn():
     else:
         currentPlayer = "@"
 
-# checking again game win or tie
 
+# checking again game win or tie
 while gameRunning:
     myBoard(gameBoard)
     myPlayerData(gameBoard)
