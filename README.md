@@ -140,3 +140,31 @@ Display the game winner message
 ## Technologies used
 
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+## Framework,Libraries and language used
+
+* [gitpod](https://gitpod.io/workspaces)
+
+* [Git](https://git-scm.com/)
+   * for Version control
+
+* [Github](https://github.com/)
+   * Deployment of the website
+
+* [Draw.io](https://app.diagrams.net/)
+   * To design the game flowchart of my tic tac toe game.
+
+* [Heroku](https://heroku.com/)
+   * Deploy the tic tac project
+
+* [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+## Testting 
+
+used CI Python Linter to test my python code run.py
+
+<details>
+<summary> run.py CI Python Linter check code
+</summary>
+
+![run.py linter check code](/checkcode.png)
