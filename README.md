@@ -120,3 +120,23 @@ Ask the user to enter number
 Display the game winner message 
 
 ![Winnermessage](/gamewinner.png)
+
+## Features left to implement 
+
+* Score system
+* Multiple player option
+
+---
+
+## Design 
+
+* User pen and paper to design my game.
+
+* Flowchart
+    * [Draw.io](https://app.diagrams.net/)
+
+---
+
+## Technologies used
+
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
