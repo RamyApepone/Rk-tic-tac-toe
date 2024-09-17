@@ -106,3 +106,17 @@ How this game work the first to place three of the marks in a row, either horizo
    * You can only enter number from 1-9
    * Players take turns
    * Player 1to align three of their marks in a row wins the game
+
+![Display Game board](/playerinput.png)
+
+* Display Message to user Y or N
+
+![userinput](/askuser.png)
+
+Ask the user to enter number
+
+![userinput2](/secondinput.png)
+
+Display the game winner message 
+
+![Winnermessage](/gamewinner.png)
