@@ -159,7 +159,7 @@ Display the game winner message
 
 * [CI Python Linter](https://pep8ci.herokuapp.com/)
 
-## Testting 
+## Testing 
 
 used CI Python Linter to test my python code run.py
 
@@ -227,7 +227,7 @@ w3School
 discuss.python.org
 
 # Acknowledgement
-My mentor Mitko for all support during my project
+My mentor Mitko for all the support during my Python project. 
 
 
 
