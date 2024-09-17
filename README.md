@@ -73,3 +73,15 @@ This game will display the result e.g: tie if no player won or won.
 
 The game is very easy to play and simple,It accessible for people of all ages. This game will help children to develop problem-solving skills.
 How this game work the first to place three of the marks in a row, either horizontally, vertically, or diagonally will win the game.
+
+### User Storie
+
+* First time visitor objective
+    * Game instruction.
+    * User will start the game after reading the instruction.
+    * This game is very easy to play.
+
+* Returning 
+    * User after game satisfaction return to play again.
+    * User share the tic tac toe game with their family member and close friends.
+
