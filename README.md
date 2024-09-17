@@ -166,6 +166,7 @@ used CI Python Linter to test my python code run.py
 <details>
 <summary> run.py CI Python Linter check code
 </summary>
+</details>
 
 ![run.py linter check code](/checkcode.png)
 
@@ -223,10 +224,9 @@ Code institute
 ### Code
 
 w3School
-Real Python
 discuss.python.org
 
-# Aknowledgement
+# Acknowledgement
 My mentor Mitko for all support during my project
 
 
