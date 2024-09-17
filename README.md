@@ -168,3 +168,28 @@ used CI Python Linter to test my python code run.py
 </summary>
 
 ![run.py linter check code](/checkcode.png)
+
+## Fixed Bugs
+No bug found
+
+## Deployment 
+
+### Deploying to Heroku
+
+I deployed my project with Heroku, code Institute Python Template.
+
+1. Log in to Heroku or create a new account
+2. On the main page click "New" and select "Create new app"
+3. Choose your unique app name and select your region
+4. Click "Create app"
+5. On the next page find "settings" and locate "Config Vars"
+6. Click "Reveal Config Vars" and add "PORT" key and value "8000", click "Add"
+7. Scroll down, locate "Buildpack" and click "Add", select "Python"
+8. Repeat step 7. only this time add "Node.js", make sure "Python" is first
+9. Scroll to the top and select "Deploy" tab
+10. Select GitHub as deployment method and search for your repository and link them together
+11. Scroll down and select either "Enable Automatic Deploys" or "Manual Deploy"
+12. Deployed site [rk-tic-tac-toe](https://rk-tic-tac-toe-56d87feb493d.herokuapp.com/)
+
+
+
