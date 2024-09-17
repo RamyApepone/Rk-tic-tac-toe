@@ -57,3 +57,11 @@ The game will switch Player turn. The game have two symbol @ and $
 * [Local clone](#local-clone)
 ### [Credits](#credits)
 ### [Aknowledgement](#aknowledgement)
+---
+
+## How to play rk tic tac toe
+
+Game implementation. Players take turns placing marks in the nine sqaures of the grip. and the game will end when 
+one player successfully align three marks or when all squares are filled.
+This game will display the result e.g: tie if no player won or won.
+
