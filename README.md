@@ -69,3 +69,7 @@ This game will display the result e.g: tie if no player won or won.
 
 ![Flowchart](/Logic%20Flowchart.png)
 
+## User Experience (UX)
+
+The game is very easy to play and simple,It accessible for people of all ages. This game will help children to develop problem-solving skills.
+How this game work the first to place three of the marks in a row, either horizontally, vertically, or diagonally will win the game.
