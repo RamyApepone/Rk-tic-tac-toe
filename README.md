@@ -18,7 +18,7 @@ The game will switch Player turn. The game have two symbol @ and $
 ### [User Experience (UX)](#Logic-Flowchart)
 * [User Storie](#user-stories)
 
-### [Feature](#Feautures)
+### [Features](#Feautures)
 * [Existing Feature](#Existing-Features)
 
 ### [Design](#desing)
@@ -85,3 +85,16 @@ How this game work the first to place three of the marks in a row, either horizo
     * User after game satisfaction return to play again.
     * User share the tic tac toe game with their family member and close friends.
 
+* Frequent user objective
+    * make the game a bit hard.
+    * Exploring new features
+    * Possibility to invite people to play online.
+
+## Features 
+
+* Game menu for user to select levels.
+* Option Play again
+
+### Existing Features
+    * Game introduction
+         * Welcome message for the users.
