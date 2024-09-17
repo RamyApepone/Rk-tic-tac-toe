@@ -96,5 +96,13 @@ How this game work the first to place three of the marks in a row, either horizo
 * Option Play again
 
 ### Existing Features
-    * Game introduction
-         * Welcome message for the users.
+
+* Game introduction
+* Welcome message for the users.
+
+![Game Introduction](/welcomepage.png)
+
+* The rule of the game 
+   * You can only enter number from 1-9
+   * Players take turns
+   * Player 1to align three of their marks in a row wins the game
