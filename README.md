@@ -65,3 +65,7 @@ Game implementation. Players take turns placing marks in the nine sqaures of the
 one player successfully align three marks or when all squares are filled.
 This game will display the result e.g: tie if no player won or won.
 
+## Logic Flowchart
+
+![Flowchart](/Logic%20Flowchart.png)
+
