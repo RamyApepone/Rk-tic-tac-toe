@@ -40,11 +40,21 @@ def myPlayerData(gameBoard):
             print("Please enter a valid number?")
 
 # Ask if the player want to restart tic tac toe game
-def restartGame(gameBoard):
+def restartGame():
+    global gameBoard, Thewinner, currentPlayer, gameRunning
     restart = input("Do you want to restart (yes/no):").strip().lower()
     if restart == "yes":
-        print("you play again")
-
+        gameBoard = ["-", "-", "-",
+                      "-", "-","-",
+                     "-", "-", "-"]
+    
+        Thewinner = None
+        currentPlayer = "@"
+        gameRunning = True
+        print("Game restarted now!")
+    else:
+        gameRunning = False
+        print("Thanks for playing RK tic tac toe")
 
 # checking if the game is win or tie
 def checkHorizontaly(gameBoard):
