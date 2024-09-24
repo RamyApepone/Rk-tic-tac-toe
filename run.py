@@ -28,12 +28,16 @@ def myBoard(gameBoard):
 
 # player input data
 def myPlayerData(gameBoard):
-    playerInp = int(input("Please Enter number from 1 to 9: "))
-    if playerInp >= 1 and playerInp <= 9 and gameBoard[playerInp-1] == "-":
-        gameBoard[playerInp-1] = currentPlayer
-    else:
-        print("Box is taken try another number!")
-
+    while True:
+        try:
+            playerInp = int(input("Please Enter number from 1 to 9: "))
+            if playerInp >= 1 and playerInp <= 9 and gameBoard[playerInp-1] == "-":
+                gameBoard[playerInp-1] = currentPlayer
+                break
+            else:
+                print("Invalid input! Box is taken or out of range. Try again another number.")
+        except ValueError:
+            print("Please enter a valid number?")
 
 # Ask if the player want to restart tic tac toe game
 def restartGame(gameBoard):
@@ -113,4 +117,4 @@ while gameRunning:
     checkWinner()
     checktieGame(gameBoard)
     PlayerTurn()
-    restartGame(gameBoard)
+restartGame()
