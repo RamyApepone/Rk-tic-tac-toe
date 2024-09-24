@@ -59,17 +59,11 @@ def restartGame():
 # checking if the game is win or tie
 def checkHorizontaly(gameBoard):
     global Thewinner
-    if gameBoard[0] == gameBoard[1] == gameBoard[2] and gameBoard[1] != "-":
-        Thewinner = gameBoard[0]
-        return True
-
-    elif gameBoard[3] == gameBoard[4] == gameBoard[5] and gameBoard[3] != "-":
-        Thewinner = gameBoard[3]
-        return True
-
-    elif gameBoard[6] == gameBoard[7] == gameBoard[8] and gameBoard[6] != "-":
-        Thewinner = gameBoard[6]
-        return True
+    for i in range(0, 9, 3):
+        if gameBoard[i] == gameBoard[i+1] == gameBoard[i+2] and gameBoard[i] != "-":
+            Thewinner = gameBoard[i]
+            return True
+    return False
 
 
 # checking the game row
