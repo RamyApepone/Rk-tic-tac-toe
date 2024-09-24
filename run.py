@@ -64,7 +64,7 @@ def checkHorizontaly(gameBoard):
             Thewinner = gameBoard[i]
             return True
     return False
-    
+
 
 # checking the game row
 def checkGameRow(gameBoard):
@@ -84,14 +84,15 @@ def checkDiagonally(gameBoard):
     elif gameBoard[2] == gameBoard[4] == gameBoard[6] and gameBoard[2] != "-":
         Thewinner = gameBoard[2]
         return True
+    return False
 
 
 # This function displa
 def checktieGame(gameBoard):
     global gameRunning
-    if "-" not in gameBoard:
+    if "-" not in gameBoard and Thewinner is None:
         myBoard(gameBoard)
-        print("The game is very tie!")
+        print("The game is a tie!")
         gameRunning = False
 
 
