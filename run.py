@@ -99,6 +99,7 @@ def checktieGame(gameBoard):
 # This function checks for the game winner
 def checkWinner():
     if checkDiagonally(gameBoard) or checkHorizontaly(gameBoard) or checkGameRow(gameBoard):
+        myBoard(gameBoard)
         print(f"The game winner is {Thewinner}! congratulation!!!")
         return True
     return False
@@ -107,7 +108,7 @@ def checkWinner():
 # change player
 def PlayerTurn():
     global currentPlayer
-    currentPlayer == "$" if currentPlayer == "@" else "@"
+    currentPlayer = "$" if currentPlayer == "@" else "@"
 
 
 # Main loop
