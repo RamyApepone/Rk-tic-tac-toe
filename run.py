@@ -110,11 +110,12 @@ def PlayerTurn():
     currentPlayer == "$" if currentPlayer == "@" else "@"
 
 
-# checking again game win or tie
+# Main loop
 while gameRunning:
     myBoard(gameBoard)
     myPlayerData(gameBoard)
-    checkWinner()
+    if checkWinner():
+        break
     checktieGame(gameBoard)
     PlayerTurn()
 restartGame()
