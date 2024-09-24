@@ -107,10 +107,7 @@ def checkWinner():
 # change player
 def PlayerTurn():
     global currentPlayer
-    if currentPlayer == "@":
-        currentPlayer = "$"
-    else:
-        currentPlayer = "@"
+    currentPlayer == "$" if currentPlayer == "@" else "@"
 
 
 # checking again game win or tie
