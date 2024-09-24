@@ -96,10 +96,12 @@ def checktieGame(gameBoard):
         gameRunning = False
 
 
-# This function going to check the winner
+# This function checks for the game winner
 def checkWinner():
     if checkDiagonally(gameBoard) or checkHorizontaly(gameBoard) or checkGameRow(gameBoard):
-        print(f"The game winner is {Thewinner} congratulation")
+        print(f"The game winner is {Thewinner}! congratulation!!!")
+        return True
+    return False
 
 
 # change player
