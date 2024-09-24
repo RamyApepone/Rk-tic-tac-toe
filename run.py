@@ -64,20 +64,16 @@ def checkHorizontaly(gameBoard):
             Thewinner = gameBoard[i]
             return True
     return False
-
+    
 
 # checking the game row
 def checkGameRow(gameBoard):
     global Thewinner
-    if gameBoard[0] == gameBoard[3] == gameBoard[6] and gameBoard[0] != "-":
-        Thewinner = gameBoard[0]
-        return True
-    elif gameBoard[1] == gameBoard[4] == gameBoard[7] and gameBoard[1] != "-":
-        Thewinner = gameBoard[1]
-        return True
-    elif gameBoard[2] == gameBoard[5] == gameBoard[8] and gameBoard[2] != "-":
-        Thewinner = gameBoard[2]
-        return True
+    for i in range(3):
+        if gameBoard[i] == gameBoard[i+3] == gameBoard[i+6] and gameBoard[i] != "-":
+            Thewinner = gameBoard[i]
+            return True
+    return False
 
 
 def checkDiagonally(gameBoard):
