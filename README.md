@@ -109,17 +109,15 @@ How this game work the first to place three of the marks in a row, either horizo
 
 ![Display Game board](/playerinput.png)
 
-* Display Message to user Y or N
-
-![userinput](/askuser.png)
-
 Ask the user to enter number
 
-![userinput2](/secondinput.png)
+![userinput1](/userInput.png)
+
+![userinput2](/userInput2.png)
 
 Display the game winner message 
 
-![Winnermessage](/gamewinner.png)
+![Winnermessage](/winner.png)
 
 ## Features left to implement 
 
